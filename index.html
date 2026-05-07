@@ -52,15 +52,15 @@
                         <button class="text-black hover:text-red-600 px-3 py-2 rounded-md text-xs md:text-sm font-bold uppercase tracking-wider inline-flex items-center transition-colors drop-shadow-sm">
                             Informasi <i class="fas fa-chevron-down ml-1 text-[10px]"></i>
                         </button>
-                    <button onclick="navigateTo('form')" class="bg-red-500 hover:bg-red-600 text-white px-4 sm:px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-md transition-all transform hover:-translate-y-0.5">Tulis Pengaduan</button>
-                    <button onclick="navigateTo('login')" class="bg-white border border-slate-200 hover:bg-gray-50 text-black px-4 sm:px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm transition-all transform hover:-translate-y-0.5 hidden sm:inline-block">Pantau Aduan</button>
-                    
-                    <!-- Tombol Fullscreen Baru -->
-                    <button onclick="window.open(window.location.href, '_blank')" class="text-slate-600 hover:text-red-600 px-2 py-2 rounded-md text-xs md:text-sm font-bold uppercase tracking-wider transition-colors drop-shadow-sm" title="Buka Layar Penuh (Tab Baru)">
-                        <i class="fas fa-external-link-alt"></i>
-                    </button>
-                    
-                    <button onclick="navigateTo('admin')" class="text-black hover:text-red-600 px-2 py-2 rounded-full text-sm font-medium transition-colors drop-shadow-sm" title="Admin"><i class="fas fa-lock"></i></button>
+                        <div class="absolute left-0 mt-2 w-56 bg-white rounded-md shadow-xl overflow-hidden z-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-slate-100">
+                            <a href="javascript:void(0)" onclick="scrollToSection('kriteria-section')" class="block px-4 py-3 text-sm text-slate-800 hover:bg-slate-50 hover:text-red-600 border-b border-gray-100 transition-colors"><i class="fas fa-list-ul mr-2 text-slate-400"></i> Kriteria Pengaduan</a>
+                            <a href="javascript:void(0)" onclick="scrollToSection('tatacara-section')" class="block px-4 py-3 text-sm text-slate-800 hover:bg-slate-50 hover:text-red-600 transition-colors"><i class="fas fa-info-circle mr-2 text-slate-400"></i> Tata Cara Pengaduan</a>
+                        </div>
+                    </div>
+
+                    <button onclick="navigateTo('form')" class="bg-red-500 hover:bg-red-600 text-white px-5 md:px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-md transition-all transform hover:-translate-y-0.5">Tulis Pengaduan</button>
+                    <button onclick="navigateTo('login')" class="bg-white border border-slate-200 hover:bg-gray-50 text-black px-5 md:px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm transition-all transform hover:-translate-y-0.5">Pantau Aduan</button>
+                    <button onclick="navigateTo('admin')" class="text-black hover:text-red-600 px-2 py-2 rounded-full text-sm font-medium transition-colors drop-shadow-sm" title="Menu Admin Rahasia"><i class="fas fa-lock"></i></button>
                 </div>
             </div>
         </div>
